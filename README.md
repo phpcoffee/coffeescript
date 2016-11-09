@@ -1,6 +1,6 @@
 # CoffeeScript PHP
 
-A port of the [CoffeeScript](http://jashkenas.github.com/coffee-script/)
+A port of the [CoffeeScript](http://coffeescript.org/)
 compiler to PHP.
 
 ## Status
