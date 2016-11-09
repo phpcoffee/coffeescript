@@ -25,7 +25,7 @@
 %left       YY_CALL_START YY_CALL_END.
 %left       YY_ACCESSOR YY_EXISTENTIAL_ACCESSOR YY_PROTOTYPE.
 
-root(A) ::=                         . { A = yy('Block'); }
+root(A) ::= YY_TERMINATOR           . { A = yy('Block'); }
 root(A) ::= body(B)                 . { A = B; }
 root(A) ::= block(B) YY_TERMINATOR  . { A = B; }
 
