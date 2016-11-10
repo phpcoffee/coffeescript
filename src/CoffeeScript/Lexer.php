@@ -1286,7 +1286,7 @@ class Lexer
 
   function tokenize()
   {
-    while ( ($this->chunk = substr($this->code, $this->index)) != FALSE )
+    while ( ($this->chunk = (string) substr($this->code, $this->index)) !== '' )
     {
       $types = array('identifier', 'comment', 'whitespace', 'line', 'heredoc',
         'string', 'number', 'regex', 'js', 'literal');
